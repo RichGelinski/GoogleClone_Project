@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    height: 60px;
+}
+
+.navbar {
+    height: 100%;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.navbar ul {
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 14px;
+}
+
+.navbar ul li {
+    margin-left: 15px;
+}
+
+.navbar ul li a {
+    color: black;
+}
+
+.Link:hover {
+    text-decoration: underline;
+}
+
+.circle-shadow {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-shadow:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+.Menu-Icon,
+.User-Icon span {
+    font-size: 18px;
+}
+
+.User-Icon span {
+    color: white;
+}
+
+.User-Icon {
+    background-color: #ef6c00;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+}
+
+/* Content */
+.Content-Section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.Content-Wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.Logo-Img {
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.Search-Bar {
+    border: 1px solid lightgrey;
+    width: 600px;
+    height: 45px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+
+.Search-Bar:hover {
+    box-shadow: 0px 0px 4px 0px #b5b5b5;
+}
+
+.Search-Bar i {
+    font-size: 18px;
+    color: gray;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.Search-Bar input {
+    flex-grow: 1;
+    height: 30px;
+    margin-right: 15px;
+    font-size: 16px;
+    border: none;
+}
+
+.Search-Bar input:focus {
+    outline: none;
+}
+
+.Search-btns {
+    margin-top: 20px;
+}
+
+.Search-btns button {
+    height: 40px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    color: black;
+    background-color: #f2f3f4;
+}
+
+.Search-btns button:hover {
+    border: 1px solid lightgray;
+}
+
+.Google-Search-btn {
+    width: 120px;
+}
+
+.Lucky-Search-btn {
+    width: 140px;
+}
+
+.language {
+    margin-top: 20px;
+}
+
+.language p a {
+    color: blue;
+}
+
+.language p a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #f2f2f2;
+    height: 100px;
+}
+
+.Footer-Content {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.Upper-Footer {
+    height: 50%;
+    border: 1px solid lightgray;
+}
+
+.Upper-Footer p {
+    color: gray;
+    font-size: 14px;
+}
+
+.Lower-Footer {
+    height: 50%;
+    justify-content: space-between;
+    display: flex;
+}
+
+.Lower-Footer ul li a {
+    font-size: 14px;
+    color: gray;
+}
+
+.Lower-Footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.Lower-Left-Footer {
+    display: flex;
+}
+
+.Lower-Left-Footer li {
+    margin-right: 15px;
+}
+
+.Lower-Right-Footer {
+    display: flex;
+}
+
+.Lower-Right-Footer li {
+    margin-left: 15px;
+}
+
+/* Mobile and Tablet */
+@media only screen and (max-width: 650px) {
+    /* Search Bar*/
+    .Search-Bar {
+        width: 90%;
+    }
+
+    /* Footer */
+    Footer {
+        height: 150px;
+    }
+
+    .Upper-Footer {
+        height: 50px;
+    }
+
+    .Lower-Footer {
+        height: 100px;
+        flex-direction: column;
+    }
+
+
+}
